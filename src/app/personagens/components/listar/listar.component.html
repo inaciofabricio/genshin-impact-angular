@@ -1,0 +1,18 @@
+  <div class="df fd-r jc-ce fw-wa m-25 pl-15 pr-15">
+    <mat-card class="fb-1 m-10" *ngFor="let p of personagens">
+      <div class="df jc-sb ai-bl">
+        <img class="fb-1" src="assets/bd-local/img/elementos/{{ p.elemento }}-lg.png" alt="Imagem do elemento {{ p.elemento }}" matTooltipClass="tooltip-red" matTooltip="{{ p.elemento }}">
+        <img class="fb-1" src="assets/bd-local/img/armas/{{ p.arma }}-lg.png" alt="Imagem da arma {{ p.elemento }}" matTooltipClass="tooltip-red" matTooltip="{{ p.arma }}">
+      </div>
+      <div class="center">
+        <mat-card-title class="mt-5">{{ p.nome }}</mat-card-title>
+      </div>
+      <div class="center mt-5">
+        <img mat-card-md-image src="assets/bd-local/img/personagens/{{ p.nome }}.png" alt="Imagem do(a) Personagem {{ p.nome }}">
+      </div>
+      <div class="df jc-se mt-5">
+        <button [routerLink]="[p.id]" mat-flat-button color="primary">Detalhar</button>
+      </div>
+    </mat-card>
+  </div>
+

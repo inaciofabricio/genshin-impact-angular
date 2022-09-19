@@ -1,0 +1,20 @@
+export interface Quantidades {
+  gemaAscensaoLasca: Number,
+  gemaAscensaoFragmento: Number,
+  gemaAscensaoPedaco: Number,
+  gemaAscensaoGema: Number,
+  materialChefeComum: Number,
+  especialidadesLocais: Number,
+  materialComumAscensaoNivel1: Number,
+  materialComumAscensaoNivel2: Number,
+  materialComumAscensaoNivel3: Number,
+  moraAscensao: number,
+  materialElevacaoNivel1: Number,
+  materialElevacaoNivel2: Number,
+  materialElevacaoNivel3: Number,
+  materialChefeSemanal: number,
+  materialComumTalentoNivel1: Number,
+  materialComumTalentoNivel2: Number,
+  materialComumTalentoNivel3: Number,
+  moraTalento: number
+}

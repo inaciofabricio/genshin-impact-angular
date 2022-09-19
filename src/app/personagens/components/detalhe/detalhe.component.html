@@ -1,0 +1,211 @@
+<div class="df fw-wa jc-ce mt-25" *ngIf="personagem">
+  <mat-card class="fb-2 m-10 center">
+    <img src="assets/bd-local/img/personagens/{{ personagem.nome }}-lg.png" alt="">
+  </mat-card>
+  <mat-card class="fb-6 m-10">
+    <div class="df fw-wa jc-ce">
+      <div class="fb-3 mr-5 mb-25">
+        <legend class="legend">Informações Principais:</legend>
+        <div>
+
+          <div>
+            <div class="df ai-ce mt-10 pl-10">
+              <span class="h5 mr-5 font-500">Nome:</span>
+              <span class="font-400">{{ personagem.nome }}</span>
+            </div>
+            <div class="df ai-ce mt-10 pl-10">
+              <span class="h5 mr-5 font-500">Elemento:</span>
+              <span class="mr-10 font-400">{{ personagem.elemento }}</span>
+              <img src="assets/bd-local/img/elementos/{{ personagem.elemento }}-sm.png" alt="Imagem do elemento {{ personagem.elemento }}">
+            </div>
+            <div class="df ai-ce mt-10 pl-10">
+              <span class="h5 mr-5 font-500">Arma:</span>
+              <span class="mr-10 font-400">{{ personagem.arma }}</span>
+              <img src="assets/bd-local/img/armas/{{ personagem.arma }}-sm.png" alt="Imagem da arma {{ personagem.arma }}">
+            </div>
+          </div>
+
+          <div>
+            <div class="mt-15">
+              <span class="h5 font-500 pl-10">Materiais de Ascensão:</span>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Gema Ascensão</span>
+              </div>
+              <div class="fb-7 pl-10">
+                <img src="assets/bd-local/img/itens/Lasca de {{ personagem.gemaAscensao }}.png" alt="Imagem da Lasca de {{ personagem.gemaAscensao }}" matTooltipClass="tooltip-red" matTooltip="Lasca de {{ personagem.gemaAscensao }} ({{ quantidades?.gemaAscensaoLasca }})">
+                <img src="assets/bd-local/img/itens/Fragmento de {{ personagem.gemaAscensao }}.png" alt="Imagem do Fragmento de {{ personagem.gemaAscensao }}" matTooltipClass="tooltip-red" matTooltip="Fragmento de {{ personagem.gemaAscensao }} ({{ quantidades?.gemaAscensaoFragmento }})">
+                <img src="assets/bd-local/img/itens/Pedaço de {{ personagem.gemaAscensao }}.png" alt="Imagem do Pedaço de {{ personagem.gemaAscensao }}" matTooltipClass="tooltip-red" matTooltip="Pedaço de {{ personagem.gemaAscensao }} ({{ quantidades?.gemaAscensaoPedaco }})">
+                <img src="assets/bd-local/img/itens/Gema de {{ personagem.gemaAscensao }}.png" alt="Imagem da Gema de {{ personagem.gemaAscensao }}" matTooltipClass="tooltip-red" matTooltip="Gema de {{ personagem.gemaAscensao }} ({{ quantidades?.gemaAscensaoGema }})">
+              </div>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Material Comum Chefe</span>
+              </div>
+              <div class="fb-7 pl-15">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialChefeComum }}.png" alt="Imagem da {{ personagem.materialChefeComum }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialChefeComum }} ({{ quantidades?.materialChefeComum }})">
+              </div>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Especialidade Local</span>
+              </div>
+              <div class="fb-7 pl-10">
+                <img src="assets/bd-local/img/itens/{{ personagem.especialidadeLocal }}.png" alt="Imagem da {{ personagem.especialidadeLocal }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.especialidadeLocal }} ({{ quantidades?.especialidadesLocais }})">
+              </div>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Material Comum</span>
+              </div>
+              <div class="fb-7 pl-10">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialComumAscensaoNivel1 }}.png" alt="Imagem da {{ personagem.materialComumAscensaoNivel1 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialComumAscensaoNivel1 }} ({{ quantidades?.materialComumAscensaoNivel1 }})">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialComumAscensaoNivel2 }}.png" alt="Imagem do {{ personagem.materialComumAscensaoNivel2 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialComumAscensaoNivel2 }} ({{ quantidades?.materialComumAscensaoNivel2 }})">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialComumAscensaoNivel3 }}.png" alt="Imagem do {{ personagem.materialComumAscensaoNivel3 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialComumAscensaoNivel3 }} ({{ quantidades?.materialComumAscensaoNivel3 }})">
+              </div>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Mora</span>
+              </div>
+              <div class="fb-7 pl-15">
+                <img src="assets/bd-local/img/itens/Mora.png" alt="Imagem da Mora" matTooltipClass="tooltip-red" matTooltip="Mora ({{ quantidades?.moraAscensao }})">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="mt-15">
+              <span class="h5 font-500 pl-10">Materiais de Elevação de Talentos:</span>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Material Elevação</span>
+              </div>
+              <div class="fb-7 pl-10">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialElevacaoNivel1 }}.png" alt="Imagem da {{ personagem.materialElevacaoNivel1 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialElevacaoNivel1 }} ({{ quantidades?.materialElevacaoNivel1 }})">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialElevacaoNivel2 }}.png" alt="Imagem do {{ personagem.materialElevacaoNivel2 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialElevacaoNivel2 }} ({{ quantidades?.materialElevacaoNivel2 }})">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialElevacaoNivel3 }}.png" alt="Imagem do {{ personagem.materialElevacaoNivel3 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialElevacaoNivel3 }} ({{ quantidades?.materialElevacaoNivel3 }})">
+              </div>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Material Chefe Semanal</span>
+              </div>
+              <div class="fb-7 pl-15">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialChefeSemanal }}.png" alt="Imagem da {{ personagem.materialChefeSemanal }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialChefeSemanal }} ({{ quantidades?.materialChefeSemanal }})">
+              </div>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Material Comum</span>
+              </div>
+              <div class="fb-7 pl-10">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialComumTalentoNivel1 }}.png" alt="Imagem da {{ personagem.materialComumTalentoNivel1 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialComumTalentoNivel1 }} ({{ quantidades?.materialComumTalentoNivel1 }})">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialComumTalentoNivel2 }}.png" alt="Imagem do {{ personagem.materialComumTalentoNivel2 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialComumTalentoNivel2 }} ({{ quantidades?.materialComumTalentoNivel2 }})">
+                <img src="assets/bd-local/img/itens/{{ personagem.materialComumTalentoNivel3 }}.png" alt="Imagem do {{ personagem.materialComumTalentoNivel3 }}" matTooltipClass="tooltip-red" matTooltip="{{ personagem.materialComumTalentoNivel3 }} ({{ quantidades?.materialComumTalentoNivel3 }})">
+              </div>
+            </div>
+            <div class="df ai-ce mt-5">
+              <div class="fb-3 pl-15">
+                <span class="font-500">Mora</span>
+              </div>
+              <div class="fb-7 pl-15">
+                <img src="assets/bd-local/img/itens/Mora.png" alt="Imagem da Mora" matTooltipClass="tooltip-red" matTooltip="Mora ({{ quantidades?.moraTalento }})">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="fb-6 mb-25">
+        <legend class="legend">Informações Adicionais:</legend>
+        <div class="df fw-wa">
+          <div class="fb-5">
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Level</mat-label>
+                <input type="number" matInput min="1" max="90">
+                <mat-hint align="end">1 - 90</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Amizade</mat-label>
+                <input type="number" matInput min="1" max="10">
+                <mat-hint align="end">1 - 10</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Constelação</mat-label>
+                <input type="number" matInput min="0" max="6">
+                <mat-hint align="end">0 - 6</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Talento - Ataque</mat-label>
+                <input type="number" matInput min="1" max="10">
+                <mat-hint align="end">1 - 10</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Talento - Elemental</mat-label>
+                <input type="number" matInput min="1" max="10">
+                <mat-hint align="end">1 - 10</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Talento - Especial </mat-label>
+                <input type="number" matInput min="1" max="10">
+                <mat-hint align="end">1 - 10</mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="fb-5">
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Artefato - Flor</mat-label>
+                <input type="number" matInput min="1" max="20">
+                <mat-hint align="end">1 - 20</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Artefato - Pena</mat-label>
+                <input type="number" matInput min="1" max="20">
+                <mat-hint align="end">1 - 20</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Artefato - Relógio</mat-label>
+                <input type="number" matInput min="1" max="20">
+                <mat-hint align="end">1 - 20</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Artefato - Calice</mat-label>
+                <input type="number" matInput min="1" max="20">
+                <mat-hint align="end">1 - 20</mat-hint>
+              </mat-form-field>
+            </div>
+            <div class="mt-15">
+              <mat-form-field appearance="fill">
+                <mat-label>Artefato - Chapeu</mat-label>
+                <input type="number" matInput min="1" max="20">
+                <mat-hint align="end">1 - 20</mat-hint>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

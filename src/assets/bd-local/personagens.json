@@ -1,0 +1,261 @@
+[
+  {
+    "id": 1,
+    "nome": "Albedo",
+    "elemento": "Geo",
+    "arma": "Espada"
+  },
+  {
+    "id": 2,
+    "nome": "Aloy",
+    "elemento": "Cryo",
+    "arma": "Arco",
+    "gemaAscensao": "Jade Shivada",
+    "materialChefeComum": "Florescimento Cristalino",
+    "especialidadeLocal": "Medula de Cristal",
+    "materialComumAscensaoNivel1": "Casca Espectral",
+    "materialComumAscensaoNivel2": "Coração Espectral",
+    "materialComumAscensaoNivel3": "Núcleo Espectral",
+    "materialElevacaoNivel1" : "Ensinamentos de Liberdade",
+    "materialElevacaoNivel2" : "Guia da Liberdade",
+    "materialElevacaoNivel3" : "Filosofia da Liberdade",
+    "materialChefeSemanal": "Momento Derretido",
+    "materialComumTalentoNivel1" : "Casca Espectral",
+    "materialComumTalentoNivel2" : "Coração Espectral",
+    "materialComumTalentoNivel3" : "Núcleo Espectral"
+  },
+  {
+    "id": 3,
+    "nome": "Amber",
+    "elemento": "Pyro",
+    "arma": "Arco"
+  },
+  {
+    "id": 4,
+    "nome": "Ayaka",
+    "elemento": "Cryo",
+    "arma": "Espada"
+  },
+  {
+    "id": 5,
+    "nome": "Barbara",
+    "elemento": "Hydro",
+    "arma": "Catalizador"
+  },
+  {
+    "id": 6,
+    "nome": "Beidou",
+    "elemento": "Electro",
+    "arma": "Espadão"
+  },
+  {
+    "id": 7,
+    "nome": "Bennett",
+    "elemento": "Pyro",
+    "arma": "Espada"
+  },
+  {
+    "id": 8,
+    "nome": "Chongyun",
+    "elemento": "Cryo",
+    "arma": "Espadão"
+  },
+  {
+    "id": 9,
+    "nome": "Diluc",
+    "elemento": "Pyro",
+    "arma": "Espadão"
+  },
+  {
+    "id": 10,
+    "nome": "Diona",
+    "elemento": "Cryo",
+    "arma": "Arco"
+  },
+  {
+    "id":11,
+    "nome": "Eula",
+    "elemento": "Cryo",
+    "arma": "Espadão"
+  },
+  {
+    "id":12,
+    "nome": "Fischl",
+    "elemento": "Electro",
+    "arma": "Arco"
+  },
+  {
+    "id":13,
+    "nome": "Ganyu",
+    "elemento": "Cryo",
+    "arma": "Arco"
+  },
+  {
+    "id":14,
+    "nome": "Hutao",
+    "elemento": "Pyro",
+    "arma": "Lança"
+  },
+  {
+    "id":15,
+    "nome": "Jean",
+    "elemento": "Anemo",
+    "arma": "Espada"
+  },
+  {
+    "id":16,
+    "nome": "Kaeya",
+    "elemento": "Cryo",
+    "arma": "Espada"
+  },
+  {
+    "id":16,
+    "nome": "Kazuha",
+    "elemento": "Anemo",
+    "arma": "Espada"
+  },
+  {
+    "id":17,
+    "nome": "Keqing",
+    "elemento": "Electro",
+    "arma": "Espada"
+  },
+  {
+    "id":18,
+    "nome": "Klee",
+    "elemento": "Pyro",
+    "arma": "Catalizador"
+  },
+  {
+    "id":19,
+    "nome": "Kokomi",
+    "elemento": "Hydro",
+    "arma": "Catalizador"
+  },
+  {
+    "id":20,
+    "nome": "Lisa",
+    "elemento": "Electro",
+    "arma": "Catalizador"
+  },
+  {
+    "id":21,
+    "nome": "Mona",
+    "elemento": "Hydro",
+    "arma": "Catalizador"
+  },
+  {
+    "id":22,
+    "nome": "Ningguang",
+    "elemento": "Geo",
+    "arma": "Catalizador"
+  },
+  {
+    "id":23,
+    "nome": "Noelle",
+    "elemento": "Geo",
+    "arma": "Espadão"
+  },
+  {
+    "id":24,
+    "nome": "Qiqi",
+    "elemento": "Cryo",
+    "arma": "Espada"
+  },
+  {
+    "id":25,
+    "nome": "Raiden",
+    "elemento": "Electro",
+    "arma": "Lança"
+  },
+  {
+    "id":26,
+    "nome": "Razor",
+    "elemento": "Electro",
+    "arma": "Espadão"
+  },
+  {
+    "id":27,
+    "nome": "Rosaria",
+    "elemento": "Cryo",
+    "arma": "Lança"
+  },
+  {
+    "id":28,
+    "nome": "Sara",
+    "elemento": "Electro",
+    "arma": "Arco"
+  },
+  {
+    "id":29,
+    "nome": "Sayu",
+    "elemento": "Anemo",
+    "arma": "Espadão"
+  },
+  {
+    "id":30,
+    "nome": "Sucrose",
+    "elemento": "Anemo",
+    "arma": "Catalizador"
+  },
+  {
+    "id":31,
+    "nome": "Tartaglia",
+    "elemento": "Hydro",
+    "arma": "Lança"
+  },
+  {
+    "id":32,
+    "nome": "Traveler",
+    "elemento": "Hydro",
+    "arma": "Espada"
+  },
+  {
+    "id":33,
+    "nome": "Venti",
+    "elemento": "Anemo",
+    "arma": "Arco"
+  },
+  {
+    "id":34,
+    "nome": "Xiangling",
+    "elemento": "Pyro",
+    "arma": "Lança"
+  },
+  {
+    "id":35,
+    "nome": "Xiao",
+    "elemento": "Anemo",
+    "arma": "Lança"
+  },
+  {
+    "id":36,
+    "nome": "Xingqiu",
+    "elemento": "Hydro",
+    "arma": "Espada"
+  },
+  {
+    "id":37,
+    "nome": "Xinyan",
+    "elemento": "Pyro",
+    "arma": "Espadão"
+  },
+  {
+    "id":38,
+    "nome": "Yanfei",
+    "elemento": "Pyro",
+    "arma": "Catalizador"
+  },
+  {
+    "id":39,
+    "nome": "Yoimiya",
+    "elemento": "Pyro",
+    "arma": "Arco"
+  },
+  {
+    "id":40,
+    "nome": "Zhongli",
+    "elemento": "Geo",
+    "arma": "Lança"
+  }
+]

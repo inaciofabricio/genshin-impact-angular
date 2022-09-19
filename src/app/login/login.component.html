@@ -1,0 +1,30 @@
+<div class="bloco-geral">
+  <div class="bloco-form">
+    <h1>Login</h1>
+    <form class="form-login" (submit)="login()">
+      <mat-form-field class="form-grupo-full-width m-5" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. jose@example.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Por favor informe um email válido.
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email é <strong>obrigatório</strong>.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-grupo-full-width m-5" appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input type="password" matInput [formControl]="senhaFormControl" placeholder="Ex. jose@example.com">
+        <mat-error *ngIf="senhaFormControl.hasError('required')">
+          Senha é <strong>obrigatória</strong>.
+        </mat-error>
+      </mat-form-field>
+      <div class="alert alert-danger" role="alert" *ngIf="this.erro != ''">
+        <strong>{{ this.erro }}</strong>
+      </div>
+      <div class="m-10 center">
+        <button [disabled]="disabled()" mat-raised-button color="primary" type="submit">Confirmar</button>
+      </div>
+    </form>
+  </div>
+</div>

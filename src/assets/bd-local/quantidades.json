@@ -1,0 +1,20 @@
+{
+  "gemaAscensaoLasca": 1,
+  "gemaAscensaoFragmento": 9,
+  "gemaAscensaoPedaco": 9,
+  "gemaAscensaoGema": 6,
+  "materialChefeComum": 46,
+  "especialidadesLocais": 168,
+  "materialComumAscensaoNivel1" : 18,
+  "materialComumAscensaoNivel2" : 30,
+  "materialComumAscensaoNivel3" : 36,
+  "moraAscensao": 42000,
+  "materialElevacaoNivel1" : 9,
+  "materialElevacaoNivel2" : 63,
+  "materialElevacaoNivel3" : 114,
+  "materialChefeSemanal": 18,
+  "materialComumTalentoNivel1" : 18,
+  "materialComumTalentoNivel2" : 66,
+  "materialComumTalentoNivel3" : 93,
+  "moraTalento": 4950000
+}
